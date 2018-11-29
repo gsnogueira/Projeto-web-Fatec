@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>FFA Racing: Circuitos</title>
+		<meta charset="utf-8"></meta>
+		<meta name="description" content="Jogo de corrida 3D"/>
+		<link rel="stylesheet" type="text/css" href="Posicao.css"/>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link href="./css/bootstrap.min.css" rel="stylesheet"/>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<div align="center">
+			<header>
+				<!--<h1>FFA Racing </h1>-->
+				<div class="becker">
+				<span>
+				<img src="Img/Logo.png" width="1024" height="60" alt="Logo"/>
+				</span>
+				</div>
+				<nav>
+					<ul>
+					
+					<div class="form-group">
+					
+						<li><a href="Inicio.html"class="btn btn-primary">Início</a></li>
+						<li><a href="Corred.html"class="btn btn-primary">Corredores</a></li>
+						<li><a href="Circ.html"class="btn btn-primary">Circuitos</a></li>
+						<li><a href="contat.php"class="btn btn-primary">Contato</a></li>
+						<li><a href="download.php"class="btn btn-primary">Download</a></li>
+
+					</div>
+					
+					</ul>
+				</nav>
+			</header>
+		</div>
+		
+	</head>
+	
+	<body>
+	
+		<div id="header"></div>
+		
+		<!-- old width="985" !-->
+		
+		<div class="centro">
+		<div class="par3">
+		
+			<canvas id="circ" width="993" height="432"></canvas>
+			<script type="text/javascript">
+			
+			var contexto, canvas;
+			console.log(canvas);
+			canvas = document.getElementById("circ");
+			contexto = canvas.getContext("2d");
+			
+			var BG = new Image();
+			BG.src = "Img/Base.png";
+			var Pista1 = new Image();
+			Pista1.src = "Img/Pista1.png";
+			var Pista2 = new Image();
+			Pista2.src = "Img/Pista2.png";
+			var Pista3 = new Image();
+			Pista3.src = "Img/Pista3.png";
+			var Pista4 = new Image();
+			Pista4.src = "Img/Pista4.png";
+			var Pistax = new Image();
+			Pistax.src = "Img/Blank.png";
+
+			function main(){
+			
+				contexto.clearRect(0, 0, canvas.width, canvas.height);
+				contexto.drawImage (BG, 0, 0, canvas.width, canvas.height);
+				contexto.drawImage (Pistax, 0, 0, 834, 381);
+				
+				btn1.onclick = function(){
+					Pistax = Pista1;
+				}
+				
+				btn2.onclick = function(){
+					Pistax = Pista2;
+				}
+				
+				btn3.onclick = function(){
+					Pistax = Pista3;
+				}
+				
+				btn4.onclick = function(){
+					Pistax = Pista4;
+				}
+				
+			}
+			
+			setInterval(main, 1000/30);
+
+			</script>
+		</div>
+		<div class="par3">
+			</br>
+			<button class="btn" id="btn1" type="button">Circuito 1</button>
+			<button class="btn" id="btn2" type="button">Circuito 2</button>
+			<button class="btn" id="btn3" type="button">Circuito 3</button>
+			<button class="btn" id="btn4" type="button">Circuito 4</button>
+			
+		</div>
+	</div>	
+		
+		
+	</body>
+	
+</html>
