@@ -1,3 +1,0 @@
-Recomendado usar o Mozilla Firefox para a abertura do site.
-
-Todos os arquivos PNG colocar numa pasta chamada "Img"
