@@ -9,3 +9,5 @@ A Dark Path é uma empresa de jogos digitais idealizada pelos respectivos alunos
 
 ## Termos de uso
 Este jogo foi desenvolvido para fins acadêmicos e tanto a programação quanto a arte foram desenvolvidas pelos alunos autores do projeto ficando vetada a cópia não autorizada dos respectivos componentes utilizados para o jogo em outros meios tanto lucrativo quanto acadêmico.
+
+![image](https://user-images.githubusercontent.com/34325394/217903720-b7f20150-8bab-49a3-9a61-d8ac1d56ffba.png)
